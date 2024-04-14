@@ -6,6 +6,7 @@
 
 .logo {
     width: 150px;
+    
 }
 
 .nav-items {
@@ -32,11 +33,12 @@
     height: auto;
     margin: 5px;
     padding: 5px;
-    overflow: scroll;
+    
 }
 
 .res-logo {
     width: 100%;
+    height: auto;
 }
 
 .res-card:hover {
@@ -52,4 +54,9 @@
 
 .search {
     text-align: center;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
 }
