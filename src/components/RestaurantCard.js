@@ -1,4 +1,5 @@
 import { CDN_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 
 const RestaurantCard = (props) => {
@@ -15,8 +16,11 @@ const RestaurantCard = (props) => {
       } = resData?.info;
 
       const {deliveryTime} = resData.info?.sla;
+      
+      console.log(name+cloudinaryImageId);
 
     return (
+        
         <div className="res-card" style={{
             backgroundColor : "#f0f0f0",
             // if we want to paas a javascript object then first define all things 

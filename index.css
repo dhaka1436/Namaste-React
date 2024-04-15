@@ -49,6 +49,7 @@
 .res-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 
@@ -57,6 +58,38 @@
 }
 
 .filter-btn{
-    margin: 10px;
+    
     cursor: pointer;
+    margin-left: 10px;
 }
+
+.Shimmer-Card {
+
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.Shimmer-Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.log-in {
+    padding:  0 20px;
+    cursor: pointer;
+    
+}
+
+.filter{
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+.user-card {
+    padding: 10px;
+    border: 1px solid black;
+}
+

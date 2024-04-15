@@ -1,6 +1,13 @@
+import { useState , useEffect} from "react";
 import { LOGO_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
+
 export const Header = () => {
     
+    const [btnName,setBtn] = useState(["Log In"]);
+
+    
+
     return (
         <div className="header">
             <div className="logo-container">
@@ -10,10 +17,31 @@ export const Header = () => {
             <div className="nav-items">
 
                 <ul>
-                    <li>Name</li>
-                    <li>About Us</li>
-                    <li>Contact us</li>
+                    <li>
+                        <Link to="/" style={{backgroundColor : "orange" , textDecoration : "none" , color : "pink"}}> Home </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/about"> About Us </Link></li>
+                    <li>
+                        <Link to="/contact"> Contact us </Link>
+                    </li>
+
                     <li>cart</li>
+
+                    {/* <li className="log-in"><button type="submit" onClick={()=>{
+                        if(btnName == "Log In") {setBtn(["Log Out"]);}
+                        else {setBtn(["Log In"]);}
+                    }}> {btnName} </button></li> */}
+
+                    <li className="log-in">
+                        <button type="submit" onClick={()=>{
+                            if(btnName == 'Log In') {setBtn("log Out");}
+                            else {setBtn("Log In");}
+                        }}>
+                            {btnName}
+                        </button>
+                    </li>
                 </ul>
 
             </div>
